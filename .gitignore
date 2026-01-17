@@ -1,3 +1,25 @@
+# --- Python & Environment ---
 .venv/
 __pycache__/
-*.env
+*.py[cod]
+*$py.class
+.python-version
+
+# --- UV (Package Manager) ---
+# Note: We usually KEEP uv.lock, but ignore the build artifacts
+.uv/
+
+# --- IDE & Editors ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- Data & Databases (CRITICAL for Zoomcamp) ---
+# We don't want to upload huge CSVs or Postgres data to GitHub
+*.csv
+*.parquet
+ny_taxi_postgres_data/
+
+# --- Environment Secrets ---
+.env
